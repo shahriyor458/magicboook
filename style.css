@@ -1,0 +1,496 @@
+/* Body */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222831;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 200px;
+}
+
+.nav{
+    display: flex;
+    gap: 50px;
+}
+
+.nav__link {
+    padding: 0 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.nav__link:hover{
+    color: #00ADB5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Intro */
+
+.intro__inner {
+    display: flex;
+}
+
+.intro__title {
+    font-size: 40px;
+    font-weight: 700;
+    gap: 100px;
+    color: #fff;
+    width: 600px;
+}
+
+span {
+    color: #00ADB5;
+    font-weight: 700;
+}
+
+
+.intro__img__2 {
+    margin-left: 20rem;
+    align-items: center;
+    width: 330px;
+}
+
+/* Main */
+
+.main__inner {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+.main__title {
+    font-size: 40px;
+    font-weight: 700;
+    gap: 120px;
+    color: #fff;
+}
+
+.main__text {
+    color: #EEEEEE;
+    width: 472px;
+}
+
+
+.main__img__2 {
+    margin-left: 20rem;
+    align-items: center;
+    width: 330px;
+}
+
+/* Team */
+
+.team__item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.team__title {
+    margin-bottom: 80px;
+    color: #fff;
+}
+
+.team__havola {
+    height: 220px;
+    width: 350px;
+    padding: 48px;
+    border-radius: 33px;
+
+    background-color: #393E46;
+}
+.team__havola__img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #3A3D42;
+    width: 100%;
+}
+
+.navigatsiya {
+    padding: 100px 0;
+    text-align: center;
+    
+}
+
+.footer__mas {
+    text-align: center;
+}
+
+.mas {
+    margin: 0 25px;
+}
+
+/* copiyright */
+
+.copiyright {
+    padding: 100px 0;
+    text-align: center;
+    color: #EEEEEE;
+    font-weight: 300;
+}
+
+/* Future */
+
+.future__title {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.future__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.future__link {
+    flex-wrap: wrap;
+    padding: 48px 48px;
+    border: 1px solid #393E46;
+    border-radius: 33px;
+    background-color: #393E46;
+    margin: 0 24px;
+    margin-bottom: 120px;
+}
+
+/* Test
+
+.test__title{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.test__item{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.test__link:hover{
+    color: #080000;
+    background-color: #EEEEEE;
+}
+
+.test__link{
+    text-decoration: none;
+    margin: 0 15px;
+    color: #fff;
+    padding: 20px 25px;
+    border: 1px solid #EEEEEE;
+} */
+
+/* Algebra */
+
+.edu__title {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.edu__video {
+    justify-content: center;
+    
+}
+
+.edu__text{
+    color: #fff;
+    text-align: center;
+}
+
+/* Burger */
+.burger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.burger div{
+    height: 5px;
+    width: 30px;
+    background-color: #fff;
+    transition: all 0.5s linear;
+}
+
+.burger--open div:nth-of-type(2){
+    display: none;
+}
+
+.burger--open div:nth-of-type(1){
+    transform: rotate(45deg) translateY(7px);
+}
+
+.burger--open div:nth-of-type(3){
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+.dark-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    transition: all 0.4s linear;
+    opacity: 0;
+    z-index: -3;
+}
+
+.dark-layer--open{
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Media */
+@media(max-width: 1199px){
+    /* Video */
+    .youtobe{
+        width: 1085px;
+    }
+
+    /* Team */
+    .team__item{
+        justify-content: center;
+    }
+
+    .team__title{
+        text-align: center;
+    }
+
+    /* Main */
+    .main__title{
+        text-align: center;
+    }
+
+    .main__text{
+        text-align: center;
+        margin: auto;
+    }
+
+    /* Intro */
+    .intro__title{
+        text-align: center;
+        margin: auto;
+    }
+
+    /* Navigatsiya */
+    .navigatsiya{
+        display: none;
+    }
+
+    /* Footer */
+    .footer__mas{
+        padding: 80px 0;
+    }
+
+    .copiyright{
+        margin-top: -150px;
+    }
+}
+
+@media(max-width: 991px){
+    /* Intro */
+    .intro__inner{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro__img__2{
+        width: 500px;
+    }
+
+
+
+    /* Video */
+
+    .youtobe{
+        width: 950px;
+    }
+
+    /* Main */
+    .main__inner{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main__img__2{
+        width: 600px;
+    }
+
+    /* Nav*/
+    .nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 320px;
+        background-color: #292c36;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 180px;
+        z-index: 3;
+        transform: translateX(100%);
+        transition: transform 0.4s linear;
+    }
+
+    .nav--open{
+        transform: translateX(0);
+    }
+
+     /* Burger */
+
+    .burger{
+        display: flex;
+        position: relative;
+        z-index: 4;
+    }
+}
+
+@media(max-width: 850px){
+    /* Video */
+    .youtobe{
+        width: 768px;
+    }
+}
+
+@media(max-width: 768px){
+    /* Future */
+    .future__item{
+        justify-content: center ;
+    }
+
+    /* Intro */
+    .intro__img__2{
+        justify-content: center;
+        width: 350px;
+    }
+
+    .intro__title{
+        font-size: 30px;
+    }
+
+    /* Main */
+    .main__img__2{
+        margin: auto;
+    }
+
+    /* Team */
+    .team__havola{
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media(max-width: 650px){
+    /* Video */
+    .youtobe{
+        width: 600px;
+        height: 450px;
+    }
+
+    /* Intro */
+    .intro__title{
+        text-align: center;
+        width: 70%;
+    }
+
+    .intro__img__2{
+        margin: auto;
+        width: 350px;
+        height: 380px;
+    }
+
+    /* Main */
+    .main__img__2{
+        width: 450px;
+    }
+}
+
+@media(max-width: 575px){
+    .youtobe{
+        width: 520px;
+        height: 340px;
+    }
+}
+
+@media(max-width: 475px){
+    /* Video */
+    .youtobe{
+        width: 440px;
+        height: 350px;
+    }
+
+    /* Intro */
+    .intro__title{
+        width: 98%;
+    }
+
+    /* Main */
+    .main__text{
+        width: 90%;
+    }
+}
+
+@media(max-width: 412px){
+    /* Video */
+    .youtobe{
+        width: 380px;
+        height: 280px;
+    }
+
+    /* Main */
+    .main__img__2{
+        width: 350px;
+        height: 280px;
+    }
+
+    /* Team */
+    .team__havola{
+        height: 280px;
+    }
+}
+
+@media(max-width: 395px){
+    /* Video */
+    .youtobe{
+        width: 350px;
+        height: 280px;
+    }
+}
+
+@media(max-width: 375px){
+    .youtobe{
+        width: 350px;
+        height: 280px;
+    }
+}
